@@ -1,0 +1,30 @@
+#topbar {
+    --curve-position: 20px;
+    background: red;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+
+#topbar::before,
+#topbar::after {
+    content: "";
+    background: transparent;
+    position: absolute;
+    width: var(--curve-position);
+    height: var(--curve-position);
+    bottom: calc(-1 * var(--curve-position));
+    border-radius: 10px;
+}
+
+#topbar::before {
+    left: 0;
+    box-shadow: calc(-0.5 * var(--curve-position)) calc(-0.5 * var(--curve-position)) red;
+}
+
+#topbar::after {
+    right: 0;
+    box-shadow: calc(0.5 * var(--curve-position)) calc(-0.5 * var(--curve-position)) red;
+}

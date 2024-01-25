@@ -1,12 +1,16 @@
 #topbar {
     --curve-position: 20px;
-    background: red;
+    --padding: 15px;
     height: 50px;
-    width: 100%;
+    width: calc(100% - 2 * var(--padding));
+    background: #e5e5e5;
     position: sticky;
+    padding:  0px var(--padding);
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
 
 #topbar::before,
 #topbar::after {
@@ -21,10 +25,24 @@
 
 #topbar::before {
     left: 0;
-    box-shadow: calc(-0.5 * var(--curve-position)) calc(-0.5 * var(--curve-position)) red;
+    box-shadow: calc(-0.5 * var(--curve-position)) calc(-0.5 * var(--curve-position)) #e5e5e5;
 }
 
 #topbar::after {
     right: 0;
-    box-shadow: calc(0.5 * var(--curve-position)) calc(-0.5 * var(--curve-position)) red;
+    box-shadow: calc(0.5 * var(--curve-position)) calc(-0.5 * var(--curve-position)) #e5e5e5;
+}
+
+#logo {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#profile {
+    border-radius: 50%;
+    height: 70%;
+}
+
+#profile:hover {
+    transform: scale(1.1);
 }

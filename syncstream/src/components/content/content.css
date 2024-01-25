@@ -1,7 +1,6 @@
 #content {
     --padding: 15px;
     height: calc(350px - 2* var(--padding));
-    background: green;
     padding: var(--padding);
     overflow-y: scroll;
     scroll-snap-type: y mandatory;

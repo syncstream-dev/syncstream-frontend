@@ -1,8 +1,10 @@
 import "./sessionentry.css";
+import SessionInfo from "../sessioninfo";
 
 const SessionEntry = () => {
     return <div className="sessionentry">
-        <img className="session_preview" src="https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"></img>
+        <img className="session_preview" src=""></img>
+        <SessionInfo/>
     </div>;
 }
 

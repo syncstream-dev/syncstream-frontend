@@ -1,0 +1,24 @@
+.session_info {
+    display: flex;
+    gap: 10px;
+}
+
+.session_info_text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+}
+
+.session_info_text_title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.session_info_icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+}

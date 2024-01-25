@@ -3,7 +3,8 @@ import "./topbar.css";
 const TopBar = () => {
     return (
         <div id="topbar">
-            This is the top bar
+            <span id="logo">SyncStream</span>
+            <img id="profile" src="./temp_pfp.png"></img>
         </div>
     );
 }

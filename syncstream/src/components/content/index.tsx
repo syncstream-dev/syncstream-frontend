@@ -6,6 +6,9 @@ const Content = () => {
         {[...Array(20)].map(() =>
             <SessionEntry />
         )}
+        <span id="more_sessions" className="material-symbols-outlined">
+            add_circle
+        </span>
     </div>
 }
 

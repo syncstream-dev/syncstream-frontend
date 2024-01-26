@@ -10,10 +10,11 @@
     gap: 10px;
     align-items: center;
     position:relative;
+    cursor: pointer;
 }
 
 .sessionentry:hover {
-    background: #e5e5e5;
+    background: #f2f2f2;
 }
 
 .session_preview {

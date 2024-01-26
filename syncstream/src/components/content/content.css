@@ -5,3 +5,8 @@
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
+
+#more_sessions {
+    font-size: 35px;
+    cursor: pointer;
+}
